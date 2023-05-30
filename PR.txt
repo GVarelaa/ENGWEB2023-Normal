@@ -1,0 +1,21 @@
+Exercício 1
+
+Exercício 1.1:
+Persistência de dados:
+        - Através da observação, reparei que teria de alterar o campo "Id" e, portanto, através do editor alterei '"Id"' para '"_id"'
+
+Setup:
+        - Executei o comando "mongoimport -d plantas -c plantas --file plantas.json --jsonArray" para inserir os registos no MongoDB
+        - O terminal avisou que tudo correu bem. O comando "db.plantas.find()" também me permitiu verificar isso.
+
+
+Exercício 1.2(Queries):
+        1- db.plantas.find().count()
+        2- db.plantas.find({Freguesia:"São Domingos de Rana"}).count()
+        3- db.plantas.distinct("Freguesia").sort()
+        4- db.plantas.aggregate([{$group : {_id:"$Freguesia", count:{$sum:1}}}])
+        5- db.plantas.aggregate([{$group : {_id:"$Espécie", count:{$sum:1}}}])
+
+
+Exercício 1.3 e 2
+        - Para executar as aplicações devemos correr o comando "npm i --save" para instalar todos os packages e, de seguida, "npm start" para iniciar os servidores
