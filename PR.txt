@@ -6,7 +6,7 @@ Persistência de dados:
 
 Setup:
         - Executei o comando "mongoimport -d plantas -c plantas --file plantas.json --jsonArray" para inserir os registos no MongoDB
-        - O terminal avisou que tudo correu bem. O comando "db.plantas.find()" também me permitiu verificar isso.
+        - O terminal avisou que tudo correu bem. O comando "db.plantas.find()" e "show collections" também me permitiu verificar isso.
 
 
 Exercício 1.2(Queries):
